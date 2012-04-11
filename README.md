@@ -1,7 +1,7 @@
 Graph
 =====
 
-There are many good Javascript/HTML5 graphing libraries already in existence e.g. [Flot](https://github.com/flot/flot) or [D3](http://mbostock.github.com/d3/). However, they don't make the simple xy data graphs often used in scientific environments without extra plugins. I decided to write my own small graphing library that could deal with large amounts of data as well as deal with logarithmic axes and page resizing. This was created as part of my work at Las Cumbres Observatory Global Telescope (LCOGT).
+There are many good Javascript/HTML5 graphing libraries already in existence e.g. [Flot](https://github.com/flot/flot) or [D3](http://mbostock.github.com/d3/). However they don't make the simple xy data graphs, often used in scientific environments, without extra plugins. I decided to write my own, small, graphing library that could deal with large amounts of data as well as logarithmic axes and page resizing. This was created as part of my work at Las Cumbres Observatory Global Telescope (LCOGT).
 
 Dependencies
 ------------
@@ -43,7 +43,14 @@ Following those you'll need:
 
 	$(document).ready(function(){
 		var dataset = [];
-		dataset.push({data: [[0,0.1],[1,0.2],[2,0.1],[3,0.25]], color: '#FFBBDD', points: {show:true}, lines: {show:true,lineWidth:2}, clickable: false, hoverable:false});
+		dataset.push({
+			data: [[0,0.1],[1,0.2],[2,0.1],[3,0.25]],
+			color: '#FFBBDD',
+			points: { show: true },
+			lines: { show: true ,lineWidth: 2 },
+			clickable: false,
+			hoverable: false
+		});
 		options = {
 			xaxis:{ label:'Time (HJD)' },
 			yaxis: { label: 'Delta (mag)' },
