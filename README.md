@@ -40,6 +40,7 @@ You need to include the appropriate Javascript files:
 	<script src="jquery.graph.js"></script>
 
 Following those you'll need:
+
 	$(document).ready(function(){
 		var dataset = [];
 		dataset.push({data: [[0,0.1],[1,0.2],[2,0.1],[3,0.25]], color: '#FFBBDD', points: {show:true}, lines: {show:true,lineWidth:2}, clickable: false, hoverable:false});
