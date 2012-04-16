@@ -25,7 +25,7 @@ Features
   * Hover text on data points which can include custom text with replacable elements
 * On newer versions of FF/Safari/Chrome the graph can be made full-screen by double clicking
 * The graph inherits the font size/family from its parent elemet in the DOM (i.e. you can set it in the CSS)
-
+* Can zoom in (click/drag) and zoom out (click)
 
 Limitations
 -----------
@@ -44,7 +44,7 @@ Following those you'll need:
 	$(document).ready(function(){
 		var dataset = [];
 		dataset.push({
-			data: [[0,0.1],[1,0.2],[2,0.1],[3,0.25]],
+			data: [{x:0,y:0.1},{x:1,y:0.2},{x:2,y:0.1},{x:3,y:0.25}],
 			color: '#FFBBDD',
 			points: { show: true },
 			lines: { show: true ,lineWidth: 2 },
