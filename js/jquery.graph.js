@@ -401,6 +401,7 @@
 			return true;
 		}).bind("mousedown",{me:this},function(ev){
 			var g = ev.data.me;
+			if(ev.event.which!=1) return;	// Only zoom on left click
 			if(g.within(ev.event.layerX,ev.event.layerY)){
 				g.selectfrom = [ev.event.layerX,ev.event.layerY];
 				g.selectto = g.selectfrom;
