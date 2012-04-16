@@ -35,8 +35,8 @@ Usage
 -----
 You need to include the appropriate Javascript files:
 
+	<!--[if lt IE 9]><script src="excanvas.js"></script><![endif]-->
 	<script src="jquery.js"></script>
-	<script src="excanvas.js"></script>
 	<script src="jquery.graph.js"></script>
 
 Following those you'll need:
