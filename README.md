@@ -1,7 +1,7 @@
 Graph
 =====
 
-There are many good Javascript/HTML5 graphing libraries already in existence e.g. [Flot](https://github.com/flot/flot), [D3](http://mbostock.github.com/d3/) and [Ico](https://github.com/alexyoung/ico). However they don't make the simple xy data graphs, often used in scientific environments, without extra plugins. I decided to write my own, small, graphing library that could deal with large amounts of data as well as logarithmic axes and page resizing. This was created as part of my work at Las Cumbres Observatory Global Telescope (LCOGT).
+There are many good Javascript/HTML5 graphing libraries already in existence e.g. [Flot](https://github.com/flot/flot), [D3](http://mbostock.github.com/d3/) and [Ico](https://github.com/alexyoung/ico). However they don't make the simple xy data graphs, often used in scientific environments, without extra plugins. I decided to write my own, small, graphing library that could deal with large amounts of data as well as logarithmic axes and page resizing. This was created as part of my work at Las Cumbres Observatory Global Telescope (LCOGT). [View demos](http://slowe.github.com/graph/).
 
 Dependencies
 ------------
