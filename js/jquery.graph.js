@@ -416,7 +416,7 @@
 					g.canvas.ctx.beginPath();
 					g.canvas.ctx.strokeStyle = 'rgb(0,0,0)';
 					g.canvas.ctx.lineWidth = g.options.grid.border;
-					g.canvas.ctx.strokeRect(g.selectfrom[0],g.selectfrom[1],g.selectto[0]-g.selectfrom[0],g.selectto[1]-g.selectfrom[1]);
+					g.canvas.ctx.strokeRect(g.selectfrom[0]-0.5,g.selectfrom[1]-0.5,g.selectto[0]-g.selectfrom[0],g.selectto[1]-g.selectfrom[1]);
 					g.canvas.ctx.stroke();
 					g.canvas.ctx.closePath();
 				}
