@@ -645,7 +645,6 @@
 			
 			// Build the hovertext output
 			var html = (typeof this.data[s].hovertext=="string") ? this.data[s].hovertext : "{{ xlabel }}: {{ x }}<br />{{ ylabel }}: {{ y }}<br />Uncertainty: {{ err }}";
-console.log(html)
 			if(typeof this.data[s].hoverbefore=="string") html = this.data[s].hoverbefore+html;
 			if(typeof this.data[s].hoverafter=="string") html = html+this.data[s].hoverafter;
 			html = html.replace(/{{ *x *}}/g,this.data[s].data[i].x);
