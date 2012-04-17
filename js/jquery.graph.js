@@ -703,7 +703,7 @@
 				data: data.data[i]
 			}
 			txt = is(data.hover.text,"function") ? data.hover.text.call(this,val) : "";
-			if(typeof txt!="string") txt = "{{ xlabel }}: {{ x }}<br />{{ ylabel }}: {{ y }}<br />Uncertainty: {{ err }}";
+			if(typeof txt!="string" || txt=="") txt = "{{ xlabel }}: {{ x }}<br />{{ ylabel }}: {{ y }}<br />Uncertainty: {{ err }}";
 			var html = (typeof data.hover.text=="string") ? data.hover.text : txt;
 			if(typeof data.hover.before=="string") html = data.hover.before+html;
 			if(typeof data.hover.after=="string") html = html+data.hover.after;
